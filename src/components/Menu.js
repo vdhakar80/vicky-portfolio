@@ -4,8 +4,8 @@ import "./../styles/menu.css";
 function Menu() {
   return (
     <div className="menu">
-      <div>
-        <center>
+      <center>
+        <div className="menu-container">
           <img
             className="profile-picture"
             src="https://upload.wikimedia.org/wikipedia/en/e/e1/Doraemon_2015.jpg"
@@ -20,10 +20,10 @@ function Menu() {
           <h5>Education</h5>
           <p>
             © Copyright ©2022 All rights reserved | This template is made with
-            by Muskan Bandil and Vicky Dhakar
+            &#128151; by Muskan Bandil and Vicky Dhakar
           </p>
-        </center>
-      </div>
+        </div>
+      </center>
     </div>
   );
 }
