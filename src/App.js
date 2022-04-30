@@ -4,7 +4,10 @@ import HomePage from "./components/HomePage";
 function App() {
   return (
     <div className="App">
-      <HomePage />
+      <h1 className="navbar">Welcome to my Portfolio</h1>
+      <div className="menu-details-container">
+        <HomePage />
+      </div>
     </div>
   );
 }

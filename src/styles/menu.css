@@ -1,16 +1,18 @@
 .menu {
-  display: flex;
+  /* display: flex; */
+  flex: 0.25;
   width: 30%;
   border: 1px solid black;
 }
 .profile-picture {
   border-radius: 50%;
-  height: 200px;
-  width: 200px;
+  height: 150px;
+  width: 150px;
 }
 .ul {
   list-style-type: none;
 }
 .menu-container {
   width: 90%;
+  margin-top: 30px;
 }
