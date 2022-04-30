@@ -1,7 +1,16 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import { copyright } from "../constants";
+import { menuApi } from "../fake-apis/menuApi";
 import "./../styles/menu.css";
 
 function Menu() {
+  const [menuData, setMenuData] = useState(null);
+
+  useEffect(() => {
+    menuApi().then((data) => {
+      setMenuData(data);
+    });
+  });
   return (
     <div className="menu">
       <center>
@@ -11,17 +20,12 @@ function Menu() {
             src="https://upload.wikimedia.org/wikipedia/en/e/e1/Doraemon_2015.jpg"
             alt="profile"
           />
-          <h3>Vicky Dhakar</h3>
-          <h4>Full Stack Developer</h4>
-          <h5>Home</h5>
-          <h5>About</h5>
-          <h5>Services</h5>
-          <h5>Skills</h5>
-          <h5>Education</h5>
-          <p>
-            © Copyright ©2022 All rights reserved | This template is made with
-            &#128151; by Muskan Bandil and Vicky Dhakar
-          </p>
+          <h3>{menuData?.name}</h3>
+          <h4>{menuData?.role}</h4>
+          {menuData?.navList.map((data) => {
+            return <h5>{data}</h5>;
+          })}
+          <p dangerouslySetInnerHTML={{ __html: copyright }}></p>
         </div>
       </center>
     </div>
