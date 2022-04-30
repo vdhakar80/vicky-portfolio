@@ -1,18 +1,8 @@
 import React from "react";
-import Details from "./Details";
-import Menu from "./Menu";
+import "./../styles/Home.css";
 
 function Home() {
-  return (
-    <div>
-      <div>
-        <Menu />
-      </div>
-      <div>
-        <Details />
-      </div>
-    </div>
-  );
+  return <div className="home">Home</div>;
 }
 
 export default Home;

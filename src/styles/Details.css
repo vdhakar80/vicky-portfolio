@@ -1,0 +1,7 @@
+.details {
+  display: flex;
+  width: 70%;
+  border: 1px solid black;
+  flex-direction: column;
+  overflow-y: auto;
+}
