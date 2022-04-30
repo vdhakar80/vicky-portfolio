@@ -3,6 +3,7 @@
   flex: 0.25;
   width: 30%;
   border: 1px solid black;
+  overflow: scroll;
 }
 .profile-picture {
   border-radius: 50%;

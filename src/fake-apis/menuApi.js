@@ -8,6 +8,6 @@ export const menuApi = () => {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
       resolve(menuData);
-    }, 1000);
+    }, 0);
   });
 };
