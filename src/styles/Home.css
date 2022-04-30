@@ -1,3 +1,46 @@
 .home {
   display: flex;
+  flex-direction: column;
+  padding: 120px 80px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ38Tetg7T0iSi7EbEixLyePpKIdqzRPKLGUw&usqp=CAU");
+}
+
+@keyframes home_body {
+  from {
+    top: 100px;
+    opacity: 0;
+  }
+  to {
+    top: 0px;
+    opacity: 1;
+  }
+}
+
+.home-body {
+  display: flex;
+  flex-direction: column;
+  animation-name: home_body;
+  animation-duration: 1s;
+  position: relative;
+}
+
+.home-body-hi {
+  display: flex;
+  font-size: 50px;
+  font-weight: 700;
+  color: purple;
+}
+
+.home-body-name {
+  display: flex;
+  font-size: 50px;
+  font-weight: 700;
+  color: purple;
+}
+
+.home-body-resumelink {
+  display: flex;
 }
