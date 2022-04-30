@@ -1,0 +1,6 @@
+.homepage-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  background-color: aliceblue;
+}
