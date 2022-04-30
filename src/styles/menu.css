@@ -1,0 +1,15 @@
+.menu {
+  width: 400px;
+  border: 1px solid black;
+}
+.profile-picture {
+  border-radius: 50%;
+  height: 200px;
+  width: 200px;
+}
+.ul {
+  list-style-type: none;
+}
+.menu-container {
+  width: 90%;
+}
