@@ -1,7 +1,7 @@
 .education {
   display: flex;
   flex-direction: column;
-  padding: 40px;
+  padding: 30px;
   background-image: linear-gradient(
     to bottom right,
     white,
@@ -21,10 +21,10 @@
   padding: 20px 10px;
   justify-content: center;
   flex-direction: column;
-  max-width: 250px;
-  max-height: 250px;
-  min-width: 250px;
-  min-height: 250px;
+  max-width: 210px;
+  max-height: 210px;
+  min-width: 210px;
+  min-height: 210px;
   margin-right: 10px;
   transition: transform 0.2s;
   box-shadow: 1px 2px 2px 1px rgb(238, 234, 234);
@@ -54,13 +54,14 @@
 .card:hover {
   padding: 0px;
   justify-content: normal;
+  align-items: center;
   box-shadow: 1px 2px 2px 1px rgb(207, 206, 206);
   border: 1px solid rgb(221, 214, 214);
   background-image: linear-gradient(white, rgb(216, 212, 212));
-  max-width: 290px;
-  max-height: 290px;
-  min-width: 290px;
-  min-height: 290px;
+  max-width: 250px;
+  max-height: 250px;
+  min-width: 250px;
+  min-height: 250px;
   transform: scale(1.05);
 }
 
@@ -77,5 +78,6 @@
   font-weight: 500;
   background-color: rgb(187, 32, 248);
   color: white;
-  text-align: center;
+  justify-content: center;
+  width: 97%;
 }
