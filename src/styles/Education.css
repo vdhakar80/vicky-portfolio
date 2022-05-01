@@ -1,0 +1,81 @@
+.education {
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+  background-image: linear-gradient(
+    to bottom right,
+    white,
+    yellow,
+    pink,
+    green
+  );
+}
+
+.education-body {
+  display: flex;
+  flex-direction: row;
+}
+
+.card {
+  display: flex;
+  padding: 20px 10px;
+  justify-content: center;
+  flex-direction: column;
+  max-width: 250px;
+  max-height: 250px;
+  min-width: 250px;
+  min-height: 250px;
+  margin-right: 10px;
+  transition: transform 0.2s;
+  box-shadow: 1px 2px 2px 1px rgb(238, 234, 234);
+  border: 1px solid rgb(238, 234, 234);
+  border-radius: 10px;
+  background-image: linear-gradient(
+    to bottom right,
+    aqua,
+    pink,
+    rgb(240, 190, 240)
+  );
+}
+
+.card-title {
+  display: flex;
+  text-align: center;
+  font-size: 30px;
+  padding: 0px 5px;
+  font-weight: 700;
+  color: rgb(187, 32, 248);
+}
+
+.card-body {
+  display: none;
+}
+
+.card:hover {
+  padding: 0px;
+  justify-content: normal;
+  box-shadow: 1px 2px 2px 1px rgb(207, 206, 206);
+  border: 1px solid rgb(221, 214, 214);
+  background-image: linear-gradient(white, rgb(216, 212, 212));
+  max-width: 290px;
+  max-height: 290px;
+  min-width: 290px;
+  min-height: 290px;
+  transform: scale(1.05);
+}
+
+.card:hover > .card-body {
+  display: flex;
+  justify-content: center;
+  font-size: 20px;
+  font-weight: 400;
+  padding: 10px;
+}
+
+.card:hover > .card-title {
+  font-size: 22px;
+  font-weight: 500;
+  background-color: rgb(187, 32, 248);
+  color: white;
+  text-align: center;
+}
