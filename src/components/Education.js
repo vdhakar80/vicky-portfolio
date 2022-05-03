@@ -2,8 +2,10 @@ import React, { useState, useEffect } from "react";
 import { educationDetails } from "../fake-apis/educationApi";
 import "./../styles/Education.css";
 
-function Education() {
+function Education(props) {
   const [educationData, setEducationData] = useState([]);
+
+  const { componentStartRef } = props;
 
   useEffect(() => {
     educationDetails().then((data) => {
@@ -11,7 +13,8 @@ function Education() {
     }, []);
   });
   return (
-    <div className="education">
+    <div ref={componentStartRef} className="education">
+      <div className="education-heading">Education</div>
       <div className="education-body">
         {educationData?.map((e, i) => {
           return (
@@ -26,4 +29,4 @@ function Education() {
   );
 }
 
-export default Education;
+export default React.memo(Education);

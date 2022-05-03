@@ -1,7 +1,7 @@
 let menuData = {
   name: "Vicky Dhakar",
   role: "Full Stack Developer",
-  navList: ["Home", "About", "Service", "Skilss", "Education"],
+  navList: ["Home", "About", "Service", "Skills", "Education"],
 };
 
 export const menuApi = () => {

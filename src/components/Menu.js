@@ -3,7 +3,7 @@ import { copyright } from "../constants";
 import { menuApi } from "../fake-apis/menuApi";
 import "./../styles/menu.css";
 
-function Menu() {
+function Menu(props) {
   const [menuData, setMenuData] = useState(null);
 
   useEffect(() => {
@@ -11,6 +11,7 @@ function Menu() {
       setMenuData(data);
     });
   });
+
   return (
     <div className="menu">
       <center>
@@ -22,8 +23,17 @@ function Menu() {
           />
           <h3>{menuData?.name}</h3>
           <h4>{menuData?.role}</h4>
-          {menuData?.navList.map((data) => {
-            return <h5>{data}</h5>;
+          {menuData?.navList.map((data, index) => {
+            return (
+              <h5
+                key={index}
+                onClick={() => {
+                  props.scrollToComponent(data);
+                }}
+              >
+                {data}
+              </h5>
+            );
           })}
           <p dangerouslySetInnerHTML={{ __html: copyright }}></p>
         </div>

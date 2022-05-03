@@ -1,8 +1,13 @@
 import React from "react";
 import "./../styles/About.css";
 
-function About() {
-  return <div className="about">About</div>;
+function About(props) {
+  const { componentStartRef } = props;
+  return (
+    <div ref={componentStartRef} className="about">
+      About
+    </div>
+  );
 }
 
-export default About;
+export default React.memo(About);
