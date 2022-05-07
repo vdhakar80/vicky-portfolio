@@ -1,7 +1,28 @@
 .about {
   display: flex;
-  height: 500px;
-  width: 300px;
+
   flex-direction: column;
   padding: 30px;
+}
+.about-heading {
+  display: flex;
+  justify-content: flex-start;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 10px 0px;
+}
+/* .about-para {
+} */
+.about-cards {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.about-card {
+  padding: 10px;
+  margin-top: 20px;
+  box-shadow: 8px 8px 16px 8px rgba(0, 0, 0, 0.2);
+  height: 150px;
+  width: 150px;
 }
