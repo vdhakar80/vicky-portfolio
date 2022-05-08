@@ -1,0 +1,110 @@
+.certifications {
+  padding: 30px;
+}
+
+.certifications-heading {
+  font-size: 18px;
+  font-weight: 600;
+  padding: 10px 0px;
+}
+
+.certifications-body {
+  width: 100%;
+}
+
+.certification-card {
+  height: 50px;
+  padding: 10px 15px;
+  margin: 10px 0px;
+  background-color: rgb(218, 216, 216);
+  box-shadow: 2px 4px 2px 1px rgb(207, 206, 206);
+  border-radius: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.certification-card-content {
+  display: flex;
+  flex-direction: column;
+}
+.certification-card-title {
+  font-size: 18px;
+  font-weight: bold;
+  padding: 5px 0px;
+}
+
+.certification-card-title + div {
+  font-size: 16px;
+}
+
+.certification-card-icon {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.certification-card-icon > img,
+a > img {
+  margin-right: 5px;
+  height: 40px;
+  width: 40px;
+  object-fit: cover;
+}
+
+.popup-container-visible {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(7, 7, 7, 0.5);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.certifications-popup {
+  opacity: 1;
+  /* display: flex;
+  flex-direction: column; */
+  height: 80vh;
+  width: 70vw;
+  /* padding: 10px; */
+  background-color: rgb(247, 244, 244);
+  border: 2px solid grey;
+  box-shadow: 1px 2px 2px 1px rgb(97, 95, 95);
+  border-radius: 5px;
+  position: relative;
+  /* position: fixed;
+  top: 10vh;
+  bottom: 10vh;
+  left: 10vw;
+  right: 10vw; */
+}
+
+.popup-container-hidden {
+  display: none;
+  opacity: 1;
+}
+
+.popup-certificate {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  opacity: 1;
+  /* margin-top: 30px; */
+}
+
+.popup-cross {
+  margin: 20px;
+  height: 30px;
+  width: 30px;
+  object-fit: cover;
+  position: absolute;
+  z-index: 1;
+  right: 0;
+}
