@@ -1,14 +1,9 @@
 .skills {
-  display: flex;
-  flex-direction: column;
   padding: 30px;
   background-color: white;
-  /* background-image: linear-gradient(to bottom right, white, pink, white); */
 }
 
 .skills-header {
-  display: flex;
-  justify-content: flex-start;
   font-size: 18px;
   font-weight: 600;
   padding: 10px 0px;
@@ -21,7 +16,6 @@
 }
 
 .skills-body-summary {
-  display: flex;
   padding: 10px 0px;
 }
 
