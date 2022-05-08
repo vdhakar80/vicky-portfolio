@@ -1,30 +1,20 @@
 .experience {
-  display: flex;
-  flex-direction: column;
   padding: 30px;
   background-color: white;
 }
 
 .experience-heading {
-  display: flex;
-  justify-content: flex-start;
   font-size: 18px;
   font-weight: 600;
   padding: 10px 0px;
 }
 
 .experience-body {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   width: 100%;
   padding: 10px;
 }
 
 .experience-border {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   height: fit-content;
   border-left: 4px solid rgb(238, 234, 234);
 }
@@ -37,66 +27,63 @@
   padding: 0px 10px 10px 10px;
 }
 
-.experience-icon{
-    display:flex;
-    height: 50px;
-    width:50px;
-    object-fit:cover;
-    border: 4px solid rgb(238, 234, 234);
-    border-radius : 50%;
-    background-color: blue;
-  justify-content:center;
-  align-items:center;
-  position:relative;
+.experience-icon {
+  display: flex;
+  height: 50px;
+  width: 50px;
+  object-fit: cover;
+  border: 4px solid rgb(238, 234, 234);
+  border-radius: 50%;
+  background-color: blue;
+  justify-content: center;
+  align-items: center;
+  position: relative;
   margin-left: -40px;
 }
 
 .experience-icon > img {
-    height: 20px;
-    width:20px;
-    object-fit:cover;
+  height: 20px;
+  width: 20px;
+  object-fit: cover;
 }
 
-.experience-summary{
-    display:flex;
-    flex-direction:column;
-    padding : 10px;
-    width : 90%;
-    background-color : rgb(238, 234, 234);
-    margin-top : 5px;
-    border-bottom-right-radius: 10px;
+.experience-summary {
+  padding: 10px;
+  width: 90%;
+  background-color: rgb(238, 234, 234);
+  margin-top: 5px;
+  border-bottom-right-radius: 10px;
 }
 
-.experience-summary-arrow{
-    width: 0; 
-    height: 0; 
-    border-top: 10px solid transparent;
-    border-bottom: 10px solid transparent;
-    border-right: 10px solid rgb(238, 234, 234);
-    margin-top:15px
+.experience-summary-arrow {
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-right: 10px solid rgb(238, 234, 234);
+  margin-top: 15px;
 }
 
-.experience-summary-heading{
-display:flex;
-flex-direction:row;
-justify-content : flex-start;
+.experience-summary-heading {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
 }
 
-
-.experience-summary-heading > h3,h5 {
-    margin-right:5px;
+.experience-summary-heading > h3,
+h5 {
+  margin-right: 5px;
 }
 
-.experience-summary-body{
-display:flex;
-padding : 10px 0px;
+.experience-summary-body {
+  padding: 10px 0px;
 }
 
-.experience-border-circle{
-    height:20px;
-    width:20px;
-    border: 4px solid rgb(238, 234, 234);
-    border-radius:50%;
-    margin-left:-15px;
-    background:rgb(238, 234, 234);
+.experience-border-circle {
+  height: 20px;
+  width: 20px;
+  border: 4px solid rgb(238, 234, 234);
+  border-radius: 50%;
+  margin-left: -15px;
+  background: rgb(238, 234, 234);
 }
