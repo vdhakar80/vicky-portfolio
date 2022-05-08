@@ -26,3 +26,14 @@
   height: 150px;
   width: 150px;
 }
+.about-role-logo {
+  margin-left: 5px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  width: 40px;
+  height: 40px;
+}
+.about-role {
+  margin-top: 15px;
+  margin-left: 5px;
+}

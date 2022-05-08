@@ -1,26 +1,38 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./../styles/About.css";
+import { aboutApi } from "./../fake-apis/aboutApi";
 
 function About(props) {
   const { componentStartRef } = props;
+  const [aboutDetails, setaboutDetails] = useState(null);
+  useEffect(() => {
+    aboutApi().then((data) => {
+      setaboutDetails(data);
+    });
+  });
+
   return (
     <div ref={componentStartRef} className="about">
-      <div className="about-heading">Who am i?</div>
-
-      <p className="about-para">
-        {`Hi I'm Jackson Ford On her way she met a copy. The copy warned the Little Blind T`}
-      </p>
-      <p>
-        {
-          "Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar."
-        }
-      </p>
+      <div className="about-heading">{aboutDetails?.title}</div>
+      {aboutDetails?.paras.map((data) => {
+        return <p>{data}</p>;
+      })}
       <div className="about-cards">
-        {["Graphic Design", "Web Design", "Software", "Application"].map(
-          (data) => {
-            return <div className="about-card">{data}</div>;
-          }
-        )}
+        {aboutDetails?.roles.map((data) => {
+          return (
+            <div
+              className="about-card"
+              style={{ borderBottom: `5px solid ${data.borderColor}` }}
+            >
+              <img
+                className="about-role-logo"
+                alt={data.role}
+                src={process.env.PUBLIC_URL + data.logo}
+              />
+              <div className="about-role"> {data.role}</div>
+            </div>
+          );
+        })}
       </div>
     </div>
   );
