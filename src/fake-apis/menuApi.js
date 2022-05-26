@@ -1,14 +1,15 @@
 let menuData = {
+  profilePicture: "vicky.jpeg",
   name: "Vicky Dhakar",
   role: "Full Stack Developer",
   navList: [
     "Home",
     "About",
-    "Service",
     "Skills",
     "Education",
     "Experience",
     "Certifications",
+    "Contact",
   ],
 };
 

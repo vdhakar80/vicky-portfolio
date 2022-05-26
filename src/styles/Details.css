@@ -2,7 +2,7 @@
   /* display: flex; */
   flex: 0.75;
   width: 70%;
-  border: 1px solid black;
+  border: 0.1px solid rgb(216, 216, 225);
   flex-direction: column;
   overflow-y: auto;
   background-color: white;

@@ -10,7 +10,7 @@ function Menu(props) {
     menuApi().then((data) => {
       setMenuData(data);
     });
-  });
+  }, []);
 
   return (
     <div className="menu">
@@ -18,24 +18,28 @@ function Menu(props) {
         <div className="menu-container">
           <img
             className="profile-picture"
-            src="https://upload.wikimedia.org/wikipedia/en/e/e1/Doraemon_2015.jpg"
+            src={process.env.PUBLIC_URL + "vicky.jpeg"}
             alt="profile"
           />
-          <h3>{menuData?.name}</h3>
-          <h4>{menuData?.role}</h4>
+          <h2 className="menu-name">{menuData?.name}</h2>
+          <h3 className="menu-role">{menuData?.role}</h3>
           {menuData?.navList.map((data, index) => {
             return (
-              <h5
+              <h4
+                className="menu-heading"
                 key={index}
                 onClick={() => {
                   props.scrollToComponent(data);
                 }}
               >
                 {data}
-              </h5>
+              </h4>
             );
           })}
-          <p dangerouslySetInnerHTML={{ __html: copyright }}></p>
+          <p
+            className="menu-copyright"
+            dangerouslySetInnerHTML={{ __html: copyright }}
+          ></p>
         </div>
       </center>
     </div>
