@@ -37,15 +37,17 @@ function Certifications(props) {
                   download
                 >
                   <img
-                    src={process.env.PUBLIC_URL + "download.png"}
+                    src={process.env.PUBLIC_URL + "download11.png"}
                     alt=""
                     title="Download"
+                    className="view-and-download"
                   />
                 </a>
                 <img
-                  src={process.env.PUBLIC_URL + "eye.png"}
+                  src={process.env.PUBLIC_URL + "view1.png"}
                   alt=""
                   title="View"
+                  className="view-and-download"
                   onClick={(e) => {
                     onClickViewCertificate(e, certificate?.certificateUrl);
                   }}

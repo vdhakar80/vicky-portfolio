@@ -108,3 +108,9 @@ a > img {
   z-index: 1;
   right: 0;
 }
+
+.view-and-download {
+  /* height: 40px;
+  width: 50px; */
+  cursor: pointer;
+}
