@@ -1,0 +1,9 @@
+.sml {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 50px;
+  margin-left: 20%;
+  margin-right: 20%;
+}

@@ -1,6 +1,7 @@
 import React, { useRef, useState } from "react";
 import "./../styles/Contact.css";
 import emailjs from "@emailjs/browser";
+import SocialMediaLinks from "./SocialMediaLinks";
 
 function Contact({ componentStartRef }) {
   const formRef = useRef(false);
@@ -98,7 +99,7 @@ function Contact({ componentStartRef }) {
               src={process.env.PUBLIC_URL + "address.png"}
               alt="Email"
             />
-            <div className="contact-info-text">Gwalior</div>
+            <div className="contact-info-text">Gwalior, MP, India</div>
           </div>
           <div className="contact-info-box">
             <img
@@ -106,7 +107,7 @@ function Contact({ componentStartRef }) {
               src={process.env.PUBLIC_URL + "phone.png"}
               alt="Email"
             />
-            <div className="contact-info-text">9876543210</div>
+            <div className="contact-info-text">+91-9999999999</div>
           </div>
         </div>
         <div className="contact-form">
@@ -161,6 +162,7 @@ function Contact({ componentStartRef }) {
           </form>
         </div>
       </div>
+      <SocialMediaLinks />
     </div>
   );
 }

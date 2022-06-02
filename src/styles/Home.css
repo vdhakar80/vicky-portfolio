@@ -42,5 +42,20 @@
 }
 
 .home-body-resumelink {
-  display: flex;
+  display: grid;
+  place-items: center;
+  height: 40px;
+  width: 130px;
+  background-color: aliceblue;
+}
+.home-body-resumelink-a {
+  text-decoration: none;
+  color: black;
+  height: 15px;
+}
+.home-body-resumelink-img {
+  position: absolute;
+  height: 13px;
+  margin-left: 4px;
+  margin-top: 3px;
 }
