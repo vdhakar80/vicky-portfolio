@@ -9,6 +9,7 @@ let menuData = {
     "Education",
     "Experience",
     "Certifications",
+    "Projects",
     "Contact",
   ],
 };

@@ -1,11 +1,11 @@
 const skillsData = [
   {
-    link: "https://leetcode.com/vdhakar80/",
+    link: "https://www.linkedin.com/in/vicky-dhakar-22a183184/",
     icon: "linkedin.png",
     title: "LinkedIn",
   },
   {
-    link: "https://leetcode.com/vdhakar80/",
+    link: "https://github.com/vdhakar80",
     icon: "github.png",
     title: "Github",
   },
@@ -15,12 +15,12 @@ const skillsData = [
     title: "Leetcode",
   },
   {
-    link: "https://leetcode.com/vdhakar80/",
+    link: "https://www.facebook.com/vicky.dhakar.52",
     icon: "instagram.png",
     title: "Instagram",
   },
   {
-    link: "https://leetcode.com/vdhakar80/",
+    link: "https://www.facebook.com/vicky.dhakar.52",
     icon: "facebook.png",
     title: "Facebook",
   },

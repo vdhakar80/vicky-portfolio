@@ -1,0 +1,48 @@
+.projects {
+  padding: 30px;
+  background-color: white;
+}
+.projects-heading {
+  font-size: 18px;
+  font-weight: 600;
+  padding: 10px 0px;
+}
+.projects-body {
+  position: relative;
+  border-radius: 10px;
+  color: white;
+  display: flex;
+  /* flex-wrap: wrap; */
+  justify-content: space-between;
+  height: 300px;
+  align-items: center;
+  background-color: black;
+  padding: 10px;
+}
+.projects-button {
+  background-color: black;
+  color: white;
+  font-size: 25px;
+  cursor: pointer;
+}
+.project-details {
+  background-color: aliceblue;
+  color: black;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+}
+.view-details-button {
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+}
+.slide {
+  opacity: 0;
+  transition-duration: 1s ease;
+}
+.slider {
+  opacity: 1;
+  transition-duration: 1s;
+  transform: scale(1.08);
+}

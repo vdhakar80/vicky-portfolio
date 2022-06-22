@@ -7,6 +7,7 @@ import Home from "./Home";
 import Experience from "./Experience";
 import Certifications from "./Certifications";
 import Contact from "./Contact";
+import Projects from "./Projects";
 
 function Details(props) {
   const { componentStartRef, currentComponent } = props;
@@ -41,6 +42,11 @@ function Details(props) {
       <Certifications
         componentStartRef={
           currentComponent === "Certifications" ? componentStartRef : null
+        }
+      />
+      <Projects
+        componentStartRef={
+          currentComponent === "Projects" ? componentStartRef : null
         }
       />
       <Contact
